@@ -21,7 +21,7 @@ else:
     # Create a session state variable to store the chat messages.
     if "messages" not in st.session_state:
         st.session_state.messages = [
-            {"role": "system", "content": "당신은 요리 도우미 챗봇입니다. 사용자가 표에 입력한 재료를 기반으로 레시피를 제안하거나, 요리 과정을 단계별로 안내해주세요. 자연스럽고 친절한 한국어로 대답하세요."}
+            {"role": "system", "content": "당신은 요리 도우미 챗봇입니다. 재료 부분은 표 형식으로 만들어주렴. 요리 과정을 단계별로 안내해주세요. 자연스럽고 친절한 한국어로 대답하세요."}
         ]
 
     # 재료 입력을 위한 표 생성
